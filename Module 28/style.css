@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+}
+nav{
+    width: 80%;
+    height: 200px;
+  
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    padding-left: 25px;
+}
+nav button{
+    color: white;
+    background-color: blueviolet;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
+.left{
+   
+}
+.left>ul>img{
+    width: 80px;
+    height: 20px;
+    margin-right: 10px;
+}
+section{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  
+   
+}
+.lf{
+    width: 50%;
+    height: 400px;
+   
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+   
+}
+h1{
+    font-size: 50px;
+    font-family: poppins;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+p{
+    margin-bottom: 20px;
+}
+span{
+    color: blueviolet;
+}
+.rf>img{
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+ 
+   margin: 0px auto;
+   margin-left: 200px;
+}
+.rf{
+    
+    width: 50%;
+    height: 400px;
+}
+.lf>button{
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border-style: none;
+}
+.lf>button:hover{
+    /* background-color: red;
+    transition-duration: 0.1s;
+  box-shadow: 10px 10px 20px black ; */
+  
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.lf>button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    transition-duration: 1s;
+    border-radius: 10px;
+}
+
+
+
+.lf>button:active:after {
+    background: transparent;
+}
+
+.lf>button:hover:before {
+    opacity: 1;
+}
+
+.lf>button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   background-color: black;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
